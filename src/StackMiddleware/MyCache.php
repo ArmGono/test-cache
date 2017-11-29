@@ -20,11 +20,8 @@ class MyCache extends PageCache {
    */
   protected function getCacheId(Request $request) {
     $cookie = '';
-
-    if(isset($_COOKIE['cachecontext'])){
-      $cookie = $_COOKIE['cachecontext'];
-    }else{
-      $_COOKIE['cachecontext']  = 'mycachetest';
+    if(isset($_COOKIE['blind_theme'])){
+      $cookie = $_COOKIE['blind_theme'];
     }
     $cid_parts = [
       $cookie,
