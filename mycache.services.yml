@@ -1,0 +1,5 @@
+services:
+  theme.negotiator.mycache_themeswitcher:
+    class: Drupal\mycache\Theme\MycacheThemeswitcherNegotiator
+    tags:
+      - { name: theme_negotiator, priority: 10 }

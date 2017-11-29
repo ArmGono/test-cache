@@ -1,0 +1,5 @@
+name: MyPageCache alter
+type: module
+description: 'Add cookies page cache/'
+version: 8.x-1.0-alpha1
+core: 8.x
